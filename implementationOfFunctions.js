@@ -23,9 +23,9 @@ class Task {
     toggleStatus(){this.done = !this.done}
 
     isOverdueDate(){
-        let time2 = this.finalDate.getTime();
-        let time1 = new Date();
-        return time2 > time1 ? true : false;
+        let finalTime = this.finalDate.getTime();
+        let realTime = new Date();
+        return realTime > finalTime ? true : false;
     }
 }
     var task1 = new Task(1, "Implement task output", true, new Date('Aug 25'), "Use fields: title, desc, done, dueDate", new Date('July 20 12:35'));
