@@ -25,7 +25,7 @@ class Task {
     isOverdueDate(){
         let finalTime = this.finalDate.getTime();
         let realTime = new Date();
-        return realTime > finalTime ? true : false;
+        return realTime > finalTime;
     }
 }
     var task1 = new Task(1, "Implement task output", true, new Date('Aug 25'), "Use fields: title, desc, done, dueDate", new Date('July 20 12:35'));
